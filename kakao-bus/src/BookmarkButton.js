@@ -26,14 +26,14 @@ export default ({
     <TouchableOpacity
       style={style}
       onPress={() => {
-        toggleIsBookmarked();
+        toggleIsBookmarked(!isBookmarked);
         onPress();
       }}
     >
       <Ionicons
         name="star"
         size={size}
-        color={isBookmarked ? COLOR.YELLOW : COLOR.GRAY_1}
+        color={isBookmarked ? COLOR.YELLOW : NEWCOLOR.GRAY_1_GRAY_4}
       />
     </TouchableOpacity>
   );
